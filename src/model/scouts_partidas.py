@@ -18,7 +18,7 @@ class Scouts_Partida:
     self.set_laterais(laterais)
     self.set_escanteios(escanteios)
     self.set_gols(gols)
-    self.set_assistencia(assistencias)
+    self.set_assistencias(assistencias)
 
 
 def set_sk_partida(self, sk_partida: int):
@@ -53,7 +53,7 @@ def set_gols(self, gols: int):
   self.gols = gols
 
 
-def set_assistencia(self, assistencias: int):
+def set_assistencias(self, assistencias: int):
   self.assistencias = assistencias
 
 
@@ -89,7 +89,7 @@ def get_gols(self) -> int:
   return self.gols
 
 
-def get_assistencia(self) -> int:
+def get_assistencias(self) -> int:
   return self.assistencias
 
 
