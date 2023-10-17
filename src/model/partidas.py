@@ -1,4 +1,4 @@
-from model.scouts_partida import Scouts_Partida
+from model.scouts_partidas import Scouts_Partida
 
 class Partida:
   def __init__(self, 
