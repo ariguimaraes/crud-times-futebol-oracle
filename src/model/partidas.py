@@ -1,5 +1,5 @@
 from model.scouts_partidas import Scouts_Partida
-from model.scouts_partida import get_sk_atleta
+from model.scouts_partida import Atleta
 
 class Partida:
   def __init__(self, 
