@@ -25,10 +25,6 @@ def set_sk_partida(self, sk_partida: int):
   self.sk_partida = sk_partida
 
 
-def set_sk_atleta(self, sk_atleta: str):
-  self.sk_atleta = sk_atleta
-
-
 def set_quantidade(self, quantidade: int):
   self.quantidade = quantidade
 
