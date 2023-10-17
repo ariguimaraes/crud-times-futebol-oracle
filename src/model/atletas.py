@@ -1,4 +1,4 @@
-from model.scouts import Scouts_Partida
+from model.scouts_partidas import Scouts_Partida
 
 class Atleta:
   def __init__(self,
@@ -46,7 +46,7 @@ class Atleta:
   def set_scouts_partida(self, scouts_partida:Scouts_Partida):
     self.scouts_partida = scouts_partida
 
-  def set_sk_times(self, sk_times: Time):
+  def set_sk_times(self, sk_times: int):
     self.sk_times = sk_times
 
   def get_sk_atletas(self) -> int:
@@ -73,7 +73,7 @@ class Atleta:
   def get_scouts_partida(self) -> Scouts_Partida:
     return self.scouts_partida
 
-  def get_sk_times(self) -> Time:
+  def get_sk_times(self) -> int:
     return self.sk_times
 
   def to_string(self):
