@@ -1,17 +1,15 @@
 from model.scouts_partidas import Scouts_Partida
-from model.scouts_partida import Atleta
 
 class Partida:
   def __init__(self, 
-                sk_partida:int=None,
-                time_casa:int=None,
-                time_visitante:int=None,
-                gols_pro:int=None,
-                gols_contra:int=None,
-                arbitro:str=None,
-                estadio:str=None,
-                sk_partidas:Scouts_Partida=None,
-                sk_atleta:Scouts_Partida=None
+                sk_partida:int= None,
+                time_casa:int= None,
+                time_visitante:int= None,
+                gols_pro:int= None,
+                gols_contra:int= None,
+                arbitro:str= None,
+                estadio:str= None,
+                scouts_partida:Scouts_Partida= None
                 ):
     self.set_sk_partida(sk_partida)
     self.set_time_casa(time_casa)
@@ -20,8 +18,7 @@ class Partida:
     self.set_gols_contra(gols_contra)
     self.set_arbitro(arbitro)
     self.set_estadio(estadio)
-    self.set_sk_partidas(sk_partidas)
-    self.set_sk_atleta(sk_atleta)
+    self.set_scouts_partida(scouts_partida)
 
   def set_sk_partida(self, sk_partida:int):
     self.sk_partida = sk_partida
@@ -44,11 +41,8 @@ class Partida:
   def set_estadio(self, estadio:str):
     self.estadio = estadio
 
-  def set_sk_atleta(self, sk_atleta:Scouts_Partida):
-    self.sk_atleta = sk_atleta
-
-  def set_sk_partidas(self, sk_partidas:Scouts_Partida):
-    self.sk_partidas = sk_partidas
+  def set_scouts_partida(self, scouts_partida:Scouts_Partida):
+    self.scouts_partida = scouts_partida
 
   def get_sk_partida(self) -> int:
     return self.sk_partida
@@ -71,12 +65,8 @@ class Partida:
   def get_estadio(self) -> str:
     return self.estadio
 
-  def get_sk_atleta(self) -> Scouts_Partida:
-    return self.sk_atleta
-
-  def get_sk_partidas(self) -> Scouts_Partida:
-    return self.sk_partidas
+  def get_scouts_partida(self) -> Scouts_Partida:
+    return self.scouts_partida
 
   def to_strig(self):
-    return f'Partida: {self.get_sk_partida()} | Time Casa: {self.get_time_casa()} | Time Visitante: {self.get_time_visitante()} | Gols Pro: {self.get_gols_pro()} | Gols Contra: {self.get_gols_contra()} | Arbitro: {self.get_arbitro()} | Estádio: {self.get_estadio()} | Atletas: {self.get_sk_atleta(),get_sk_atleta()} | Partida: {self.get_sk_partidas().get_sk_partida()}'
-
+    return f"Partida: {self.get_sk_partida()} | Time Casa: {self.get_time_casa()} | Time Visitante: {self.get_time_visitante()} | Gols Pro: {self.get_gols_pro()} | Gols Contra: {self.get_gols_contra()} | Arbitro: {self.get_arbitro()} | Estádio: {self.get_estadio()} |Partida: {self.get_scouts_partida().get_sk_partida()}"
