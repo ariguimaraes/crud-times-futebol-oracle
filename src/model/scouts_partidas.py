@@ -2,7 +2,6 @@ class Scouts_Partida:
 
   def __init__(self,
                sk_partida: int = None,
-               sk_atleta: str = None,
                quantidade: int = None,
                cartao_vermelho: int = None,
                cartao_amarelo: int = None,
@@ -12,7 +11,6 @@ class Scouts_Partida:
                gols: int = None,
                assistencias: int = None):
     self.set_sk_partida(sk_partida)
-    self.set_sk_atleta(sk_atleta)
     self.set_quantidade(quantidade)
     self.set_cartao_vermelho(cartao_vermelho)
     self.set_cartao_amarelo(cartao_amarelo)
