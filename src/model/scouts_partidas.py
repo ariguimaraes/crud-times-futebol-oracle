@@ -1,15 +1,15 @@
 class Scouts_Partida:
-
   def __init__(self,
                sk_partida: int = None,
                quantidade: int = None,
                cartao_vermelho: int = None,
                cartao_amarelo: int = None,
                faltas: int = None,
-               laterias: int = None,
+               laterais: int = None,
                escanteios: int = None,
                gols: int = None,
-               assistencias: int = None):
+               assistencias: int = None
+              ):
     self.set_sk_partida(sk_partida)
     self.set_quantidade(quantidade)
     self.set_cartao_vermelho(cartao_vermelho)
@@ -41,8 +41,8 @@ def set_faltas(self, faltas: int):
   self.faltas = faltas
 
 
-def set_laterais(self, laterias: int):
-  self.laterias = laterias
+def set_laterais(self, laterais: int):
+  self.laterias = laterais
 
 
 def set_escanteios(self, escanteios: int):
@@ -59,10 +59,6 @@ def set_assistencia(self, assistencias: int):
 
 def get_sk_partida(self) -> int:
   return self.sk_partida
-
-
-def get_sk_atleta(self) -> str:
-  return self.sk_atleta
 
 
 def get_quantidade(self) -> int:
@@ -82,7 +78,7 @@ def get_faltas(self) -> int:
 
 
 def get_laterais(self) -> int:
-  return self.laterias
+  return self.laterais
 
 
 def get_escanteios(self) -> int:
@@ -98,4 +94,4 @@ def get_assistencia(self) -> int:
 
 
 def to_string(self):
-  return f'Partida: {self.get_sk_partida()} | Atleta: {self.get_sk_atleta()} | Quant: {self.get_quantidade()} | Vermelho: {self.get_cartao_vermelho()} | Amarelo: {self.get_cartao_amarelo()} | Faltas: {self.get_faltas()} | Laterais: {self.get_laterais()} | Escanteios: {self.get_escanteios()} | Gols: {self.get_gols()} | Ass: {self.get_assistencia()}'
+  return f"Partida: {self.get_sk_partida()} | Atleta: {self.get_sk_atleta()} | Quant: {self.get_quantidade()} | Vermelho: {self.get_cartao_vermelho()} | Amarelo: {self.get_cartao_amarelo()} | Faltas: {self.get_faltas()} | Laterais: {self.get_laterais()} | Escanteios: {self.get_escanteios()} | Gols: {self.get_gols()} | Ass: {self.get_assistencias()}"
